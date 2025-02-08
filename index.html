@@ -2665,7 +2665,7 @@ function submitForm() {
     const formData = new FormData(document.getElementById('dataEntryForm'));
     const jsonData = Object.fromEntries(formData.entries());
 
-    fetch('https://script.google.com/macros/s/AKfycbzxMEksLscaLAM7f1hnNxEzpkd0I7qZNrhOSmwpjwZKMI1gyIUSnEswjrKGdYZK2DQf/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbyLqiGo4R-ZIwvPGdv2qFV6yVmtw8Qkl_mqX90XrPc1Jj8DZGGJvasxpdWdGFA1mpt09g/exec', {
         method: 'POST',
         body: new URLSearchParams(jsonData)
     }).then(response => {
